@@ -1,38 +1,61 @@
 body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb);
-    height: 100vh;
+    background: linear-gradient(to bottom right, #fceabb, #f8b500);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    min-height: 100vh;
 }
 
-/* Khung trắng */
-.card {
-    background: white;
-    padding: 40px 50px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    max-width: 450px;
+header {
     text-align: center;
+    padding: 30px 20px;
 }
 
-/* Hiệu ứng fade-in */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1.5s forwards;
+header h1 {
+    font-size: 2.5rem;
+    color: #ff7f50;
 }
 
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+header p {
+    font-size: 1.1rem;
+    color: #333;
 }
 
-/* Ảnh mặt trời */
-.sun {
-    width: 90px;
-    margin-bottom: 15px;
+.members {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member {
+    background: white;
+    padding: 15px 25px;
+    margin: 8px 0;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    font-weight: 500;
+}
+
+.canva-link {
+    margin-top: 30px;
+}
+
+.canva-link a {
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.canva-link a:hover {
+    background-color: #ff4b3e;
 }
