@@ -1,14 +1,16 @@
+/* Body */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* font hiện đại */
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom right, #fceabb, #f8b500);
+    background: linear-gradient(to bottom right, #a0e7e5, #00b4d8); /* xanh dịu, pastel */
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
 }
 
+/* Header */
 header {
     text-align: center;
     padding: 30px 20px;
@@ -16,14 +18,15 @@ header {
 
 header h1 {
     font-size: 2.5rem;
-    color: #ff7f50;
+    color: #023e8a; /* xanh đậm nổi bật */
 }
 
 header p {
     font-size: 1.1rem;
-    color: #333;
+    color: #03045e; /* xanh đậm hơn */
 }
 
+/* Danh sách thành viên */
 .members {
     margin-top: 20px;
     display: flex;
@@ -32,22 +35,29 @@ header p {
 }
 
 .member {
-    background: white;
+    background: #ffffffcc; /* nền trắng hơi trong suốt */
     padding: 15px 25px;
     margin: 8px 0;
     border-radius: 15px;
-    width: 250px;
+    width: 280px;
     text-align: center;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
     font-weight: 500;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.member:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+/* Nút link Canva */
 .canva-link {
     margin-top: 30px;
 }
 
 .canva-link a {
-    background-color: #ff6f61;
+    background: linear-gradient(to right, #48cae4, #90e0ef); /* gradient xanh dịu */
     color: white;
     padding: 12px 25px;
     border-radius: 25px;
@@ -57,5 +67,6 @@ header p {
 }
 
 .canva-link a:hover {
-    background-color: #ff4b3e;
+    background: linear-gradient(to right, #90e0ef, #48cae4);
+    transform: translateY(-2px);
 }
