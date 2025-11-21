@@ -1,90 +1,114 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhóm 6 - Giới thiệu thành viên</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Group Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .group-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .profile-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .profile-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .name a {
+            font-size: 18px;
+            margin-top: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #0077cc;
+        }
+        .name a:hover {
+            text-decoration: underline;
+        }
+        .class {
+            color: #555;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        <h1>Nhóm 6 - Thành viên</h1>
-        <p>Trang web giới thiệu các thành viên nhóm</p>
-    </header>
+    <h1>Group Profile</h1>
 
-    <main>
-        <div class="members">
-            <div class="member">
-                <a href="#nhi-profile">1. Lê Bùi Thảo Nhi</a>
+    <div class="group-container">
+
+        <!-- Person 1 -->
+        <div class="profile-card">
+            <img src="images/coffee.png" alt="Person 1">
+            <div class="Phương Thy">
+                <a href="https://example.com/person1" target="_blank">Person 1</a>
             </div>
-            <div class="member">
-                <a href="#thao-profile">2. Đặng Hương Thảo</a>
-            </div>
-            <div class="member">
-                <a href="#vy-profile">3. Đặng Khánh Vy</a>
-            </div>
-            <div class="member">
-                <a href="#cuong-profile">4. Đoàn Chí Cường</a>
-            </div>
-            <div class="member">
-                <a href="#mai-vy-profile">5. Mai Hoàng Vy</a>
-            </div>
-            <div class="member">
-                <a href="#thy-profile">6. Nguyễn Phương Thy</a>
-            </div>
+            <div class="class">Class: Class 12 English</div>
         </div>
 
-        <!-- Profile Sections -->
-        <section id="nhi-profile" class="profile">
-            <h2>Lê Bùi Thảo Nhi</h2>
-            <p><strong>Lớp:</strong> 12A</p>
-            <p><strong>Ngày sinh:</strong> 01/01/2008</p>
-            <img src="images/nhi.jpg" alt="Ảnh minh hoạ Thảo Nhi" />
-        </section>
-
-        <section id="thao-profile" class="profile">
-            <h2>Đặng Hương Thảo</h2>
-            <p><strong>Lớp:</strong> 12A</p>
-            <p><strong>Ngày sinh:</strong> 02/02/2008</p>
-            <img src="images/thao.jpg" alt="Ảnh minh hoạ Hương Thảo" />
-        </section>
-
-        <section id="vy-profile" class="profile">
-            <h2>Đặng Khánh Vy</h2>
-            <p><strong>Lớp:</strong> 12A</p>
-            <p><strong>Ngày sinh:</strong> 03/03/2008</p>
-            <img src="images/khanhvy.jpg" alt="Ảnh minh hoạ Khánh Vy" />
-        </section>
-
-        <section id="cuong-profile" class="profile">
-            <h2>Đoàn Chí Cường</h2>
-            <p><strong>Lớp:</strong> 12A</p>
-            <p><strong>Ngày sinh:</strong> 04/04/2008</p>
-            <img src="images/cuong.jpg" alt="Ảnh minh hoạ Chí Cường" />
-        </section>
-
-        <section id="mai-vy-profile" class="profile">
-            <h2>Mai Hoàng Vy</h2>
-            <p><strong>Lớp:</strong> 12A</p>
-            <p><strong>Ngày sinh:</strong> 20/05/2008</p>
-            <img src="images/maivy.jpg" alt="Ảnh minh hoạ Mai Vy" />
-        </section>
-
-        <section id="thy-profile" class="profile">
-            <h2>Nguyễn Phương Thy</h2>
-            <p><strong>Lớp:</strong> 12A</p>
-            <p><strong>Ngày sinh:</strong> 19/05/2008</p>
-            <img src="images/thy.jpg" alt="Ảnh minh hoạ Phương Thy" />
-        </section>
-
-        <div class="canva-link">
-            <a href="https://www.canva.com/design/DAGzxApgTpM/PWEykRqoUenqVsGBUFZB7A/edit?=" target="_blank">
-                Mở link soạn bài tập của nhóm
-            </a>
+        <!-- Person 2 -->
+        <div class="profile-card">
+            <img src="https://via.placeholder.com/300" alt="Person 2">
+            <div class="name">
+                <a href="https://example.com/person2" target="_blank">Person 2</a>
+            </div>
+            <div class="class">Class: Class B</div>
         </div>
-    </main>
+
+        <!-- Person 3 -->
+        <div class="profile-card">
+            <img src="https://via.placeholder.com/300" alt="Person 3">
+            <div class="name">
+                <a href="https://example.com/person3" target="_blank">Person 3</a>
+            </div>
+            <div class="class">Class: Class C</div>
+        </div>
+
+        <!-- Person 4 -->
+        <div class="profile-card">
+            <img src="https://via.placeholder.com/300" alt="Person 4">
+            <div class="name">
+                <a href="https://example.com/person4" target="_blank">Person 4</a>
+            </div>
+            <div class="class">Class: Class D</div>
+        </div>
+
+        <!-- Person 5 -->
+        <div class="profile-card">
+            <img src="https://via.placeholder.com/300" alt="Person 5">
+            <div class="name">
+                <a href="https://example.com/person5" target="_blank">Person 5</a>
+            </div>
+            <div class="class">Class: Class E</div>
+        </div>
+
+        <!-- Person 6 -->
+        <div class="profile-card">
+            <img src="https://via.placeholder.com/300" alt="Person 6">
+            <div class="name">
+                <a href="https://example.com/person6" target="_blank">Person 6</a>
+            </div>
+            <div class="class">Class: Class F</div>
+        </div>
+
+    </div>
 
 </body>
 </html>
